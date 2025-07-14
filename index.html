@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        .navbar{
+            background: linear-gradient(to right,rgba(87, 57, 2, 0.702), rgba(255, 0, 0, 0.736));
+        }
+        .navbar-collapse{
+            margin-left: 400px;
+        }
+        .navbar-brand{
+            margin-left: 200px;
+            font-size: 25px;
+        }
+        .nav-link{
+          font-size: 20px;
+        }
+        .carousel{
+            width: 90%;
+        }
+        li {
+            list-style-type: none;
+        }
+        .nav-li{
+          margin-top: 10px;
+        }
+        i{
+          font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info ">
+        <div class="container-fluid ms-3 me-3">
+            <a class="navbar-brand text-white" href="#">MeaAhchhnganh Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mybutton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mybutton">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-4 ">
+                    <li class="nav-item"><a class="nav-link text-white active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="#">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white active" role="button" data-bs-toggle="dropdown" href="#">Manu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="Popular Drink">Popular Drink</a></li>
+                            <li><a class="dropdown-item " href="#">Session Drink</a></li>
+                            <li><a class="dropdown-item " href="#">Hot Drink</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="#">Benafit</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="#">How to Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid justify-content-center  align-items-center d-flex" >
+    <div class="carousel slide mt-3" id="scroll" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#scroll" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#scroll" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#scroll" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#scroll" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="https://i.pinimg.com/736x/33/0c/30/330c305bcb959a4517041e43edae0c31.jpg" alt="" class="w-100" style="height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/bc/f2/c2/bcf2c2913e28f70ed6fb7fd12917752c.jpg" alt="" class="w-100" style="height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/37/81/1a/37811acfba0bf14656bc43dc8d7fdc93.jpg" alt="" class="w-100" style="height: 400px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/fb/56/46/fb56461c72acc88db3e59f7fe7dbef6f.jpg" alt="" class="w-100" style="height: 400px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#scroll" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#scroll" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+    <div class="popular mt-3"><h2><center>Popular Drink</center></h2></div>
+    <div class="row g-4 mt-2">
+      <!-- Card Item Start -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://imgs.search.brave.com/rqcHcpZg92cL3M6ZSYQaJbEL_WEGvxhIflSI3p-VDi4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2LzM0LzU5LzQ5/LzM2MF9GXzYzNDU5/NDk5Nl94V3d6cHAz/alJIZ1BIbVQxSnlD/Nnc4RlRXT21SNEpK/Mi5qcGc" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">3$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate the above card as needed -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/ba/3d/03/ba3d0375ac57a203f48508a2127acc4e.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">3$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/c9/4e/3c/c94e3c7a11eeb0126768879445f884fd.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">5$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/bd/6f/bc/bd6fbc9c90d2657490afb1ddc97c7c28.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">2$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular mt-3"><h2><center>session Drink</center></h2></div>
+    <div class="row g-4 mt-2">
+      <!-- Card Item Start -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/79/cf/50/79cf50195c06d41d827a91ae4059d286.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">3$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate the above card as needed -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/56/f8/8a/56f88a227742c375bf88b1efd5e65815.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">5$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/ef/e8/aa/efe8aa59ea71bbc8fd8b57c01215fd31.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">5$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/08/f7/5a/08f75af27408fb456e2917b8966824e6.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">5$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular mt-3"><h2><center>Hot Drink</center></h2></div>
+    <div class="row g-4 mt-2">
+      <!-- Card Item Start -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/7e/01/74/7e017416bb8cead28c77d5bb12fcdfca.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">2.5$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Duplicate the above card as needed -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/db/42/db/db42db85a5847c9eb7a305197a3c1f52.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">3$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/5a/2f/26/5a2f26bf4ceec6354210307fe7eb30b7.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">3$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/736x/cf/d6/bd/cfd6bd900e68dad42c76a40c632a5f04.jpg" class="card-img-top" alt="Product Image">
+          <div class="card-body text-center">
+            <h5 class="card-title">2$</h5>
+            <p class="card-text">Buy Now make u happiness</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+     <footer class="footer py-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h5>About Us</h5>
+        <ul class="list-unstyled">
+          <li><a class="nav-link " href="#">Our Company</a></li>
+          <li><a class="nav-link " href="#">Our Coffee</a></li>
+          <li><a class="nav-link " href="#">About MeaAhchhnganh</a></li>
+          <li><a class="nav-link " href="#">MeaAhchhnganh Archive</a></li>
+          <li><a class="nav-link " href="#">Investor Relation</a></li>
+          <li><a class="nav-link " href="#">Customer Service</a></li>
+          <li><a class="nav-link " href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h5>Career</h5>
+        <ul class="list-unstyled">
+          <li><a class="nav-link " href="#">Culture and Values</a></li>
+          <li><a class="nav-link " href="#">Belonging at MeaAhchhnganh</a></li>
+          <li><a class="nav-link " href="#">College Achievement Plan</a></li>
+          <li><a class="nav-link " href="#">Alumni Community</a></li>
+          <li><a class="nav-link " href="#">Khmer Careers</a></li>
+          <li><a class="nav-link " href="#">International Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h5>For Business Partners</h5>
+        <ul class="list-unstyled">
+          <li><a class="nav-link " href="#">Landlord Support Center</a></li>
+          <li><a class="nav-link " href="#">Suppliers</a></li>
+          <li><a class="nav-link " href="#">Corporate Gift Card Sales</a></li>
+          <li><a class="nav-link " href="#">Office & Foodservice Coffee</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <h5>Order & Pick Up</h5>
+        <ul class="list-unstyled">
+          <li><a class="nav-link " href="#">Order on the App</a></li>
+          <li><a class="nav-link " href="#">Order on the Web</a></li>
+          <li><a class="nav-link " href="#">Delivery</a></li>
+          <li><a class="nav-link " href="#">Pick Up Options</a></li>
+          <li><a class="nav-link " href="#">Find Coffee for Home</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="bg-secondary mt-4">
+
+    <div class="d-flex justify-content-between align-items-center flex-column flex-md-row mt-3">
+      <p class="mb-0 text-black-50">&copy; 2025 MeaAhchhnganh Cafe. All rights reserved.</p>
+      <div class="d-flex gap-3 mt-2 mt-md-0">
+        <a href="#" class="text-black-50"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-black-50"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-black-50"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="text-black-50"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
